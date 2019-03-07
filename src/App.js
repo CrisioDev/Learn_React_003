@@ -16,7 +16,7 @@ class App extends Component {
     //const persons = this.state.persons.slice(); //slice to create a copy of state
     const persons = [...this.state.persons]; //... to spread the array to the new const array
     persons.splice(personIndex, 1);
-    this.setState({persons: persons})
+    this.setState({persons: persons});
   }
 
   nameChangedHandler = (event, id) =>{
@@ -56,7 +56,7 @@ class App extends Component {
         <div>
           {this.state.persons.map((person, index) => {
             return <Person
-            click={() => this.deletePersonHandler(index)}
+              click={() => this.deletePersonHandler(index)}
               name={person.name} 
               age={person.age}
               key={person.id}
