@@ -68,7 +68,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>Hi, I\'m a React App!</h1>
+        <h1>Hi, I'm a React App!</h1>
         <p>Crazy JSX Stuff is goin' on!</p>
         <button 
           style={style}
